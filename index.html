@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>datachungkhoan.com — Ứng dụng & Dữ liệu Chứng khoán</title>
+  <meta name="description" content="Trang giới thiệu các tiện ích nhỏ, công cụ tải dữ liệu và phân tích chứng khoán Việt Nam.">
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 256 256'%3E%3Crect width='256' height='256' rx='56' fill='%23006AE3'/%3E%3Cpath d='M56 168l48-64 40 48 56-80' fill='none' stroke='white' stroke-width='20' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E" />
+  <meta property="og:title" content="datachungkhoan.com — Ứng dụng & Dữ liệu Chứng khoán" />
+  <meta property="og:description" content="Bộ tiện ích nhỏ cho nhà đầu tư: Tải dữ liệu, phân tích kỹ thuật, biểu đồ, API." />
+  <meta property="og:type" content="website" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container row space-between center">
+      <a class="brand" href="#home">datachungkhoan<span>.com</span></a>
+      <button class="nav-toggle" aria-label="Mở menu">&#9776;</button>
+      <nav class="nav" id="nav">
+        <a href="#home">Trang chủ</a>
+        <a href="#apps">Ứng dụng</a>
+        <a href="#data">Dữ liệu</a>
+        <a href="#guide">Hướng dẫn</a>
+        <a href="#contact">Liên hệ</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="home">
+    <section class="hero container">
+      <p class="eyebrow">Bản mẫu GitHub Pages</p>
+      <h1>Ứng Dụng Nhỏ · Tiện Ích Hằng Ngày</h1>
+      <p class="lede">Khởi tạo nhanh website tĩnh. Bạn có thể thay nội dung này bằng gói HTML từ Readdy.ai hoặc mã của bạn.</p>
+      <div class="actions">
+        <a class="btn primary" href="#apps">Khám phá ứng dụng</a>
+        <a class="btn ghost" href="#guide">Xem hướng dẫn</a>
+      </div>
+    </section>
+
+    <section id="apps" class="container grid cards">
+      <article class="card">
+        <h3>Tải dữ liệu cổ phiếu</h3>
+        <p>Script Python/Flask cung cấp API để tải OHLCV, chỉ báo kỹ thuật. Kết hợp với vnstock/yfinance.</p>
+        <a href="#" class="link">Chi tiết</a>
+      </article>
+      <article class="card">
+        <h3>Phân tích kỹ thuật</h3>
+        <p>Bộ tính RSI, MACD, Bollinger; xuất biểu đồ PNG/HTML. Sẵn sàng nhúng vào trang.</p>
+        <a href="#" class="link">Chi tiết</a>
+      </article>
+      <article class="card">
+        <h3>Báo cáo PDF</h3>
+        <p>Tạo báo cáo tự động từ dữ liệu, xuất PDF/Excel cho từng mã hoặc danh mục.</p>
+        <a href="#" class="link">Chi tiết</a>
+      </article>
+    </section>
+
+    <section id="data" class="container two-col">
+      <div>
+        <h2>Kho dữ liệu</h2>
+        <p>Tải dữ liệu lịch sử &amp; realtime (nếu có quyền), chuẩn hóa cột, timezone, định dạng số. Bạn có thể thay phần này bằng bảng/iframe thật.</p>
+        <ul class="check">
+          <li>CSV/Excel tải xuống trực tiếp</li>
+          <li>Endpoint JSON cho ứng dụng khác</li>
+          <li>Tối ưu cache &amp; CDN</li>
+        </ul>
+      </div>
+      <div class="box">
+        <pre><code>GET /api/price?symbol=HPG&amp;range=1y
+200 OK
+[
+  {"time":"2025-01-02","open":28.1,"high":28.5,"low":27.9,"close":28.2,"volume":1234567},
+  ...
+]</code></pre>
+      </div>
+    </section>
+
+    <section id="guide" class="container">
+      <h2>Triển khai nhanh trên GitHub Pages</h2>
+      <ol class="steps">
+        <li>Tạo repo <strong>letrongthu.github.io</strong> (Public).</li>
+        <li>Tải lên <code>index.html</code> và thư mục <code>assets/</code>.</li>
+        <li>Settings → Pages → Source: <em>Deploy from a branch</em> → <code>main</code> / <code>/root</code>.</li>
+        <li>Chờ build xong, mở <a href="https://letrongthu.github.io/" target="_blank" rel="noopener">letrongthu.github.io</a>.</li>
+      </ol>
+      <p><em>Mẹo:</em> Link CSS/JS/ảnh nên là đường dẫn <strong>tương đối</strong> (ví dụ <code>./assets/css/style.css</code>).</p>
+    </section>
+
+    <section id="contact" class="container cta">
+      <h2>Muốn mình nhúng gói Readdy.ai vào site này?</h2>
+      <p>Gửi gói .zip hoặc link publish, mình sẽ chuyển thành mã tĩnh và tối ưu đường dẫn cho GitHub Pages.</p>
+      <a class="btn primary" href="mailto:thu@example.com">Liên hệ</a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container row space-between center">
+      <small>© 2025 datachungkhoan.com</small>
+      <div class="social">
+        <a href="https://github.com/Letrongthu" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+  <noscript>Trang này dùng một ít JavaScript cho menu và cuộn mượt.</noscript>
+</body>
+</html>
